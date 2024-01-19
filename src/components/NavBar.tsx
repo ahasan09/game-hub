@@ -4,7 +4,7 @@ import logo from "../assets/react.svg";
 export const NavBar = () => {
   return (
     <HStack>
-      <Image src={logo}></Image>
+      <Image src={logo} />
     </HStack>
   );
 };
