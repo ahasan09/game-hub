@@ -1,1 +1,2 @@
-1. ES7+ React/Redux/React-Native Snippets
+1. Install tools ES7+ React/Redux/React-Native Snippets
+2. Create component use `rafce` then hit Tab
