@@ -6,7 +6,7 @@ import { GameQuery } from "../interfaces/GameQuery";
 
 const apiClient = new APICLient<Game>('/games');
 
-const useGames = (gameQuery: GameQuery) =>
+const useInfiniteGames = (gameQuery: GameQuery) =>
     useQuery<FetchResponse<Game>, Error>({
         queryKey: ['games', gameQuery],
         queryFn: () =>
@@ -20,4 +20,4 @@ const useGames = (gameQuery: GameQuery) =>
             })
     });
 
-export default useGames
+export default useInfiniteGames

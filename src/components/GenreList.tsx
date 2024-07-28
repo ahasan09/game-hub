@@ -6,9 +6,10 @@ import {
   List,
   ListItem,
 } from "@chakra-ui/react";
-import useGenres, { Genre } from "../hooks/useGenres";
+import useGenres from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
 import GenreSkeleton from "./GenreSkeleton";
+import { Genre } from "../interfaces/Genre";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
