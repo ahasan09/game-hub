@@ -9,6 +9,7 @@ import GameHeading from "./components/GameHeading";
 import { GameQuery } from "./interfaces/GameQuery";
 import { Genre } from "./interfaces/Genre";
 import InfiniteGameGrid from "./components/InfiniteGameGrid";
+import InfiniteScrollGameGrid from "./components/InfiniteScrollGameGrid";
 
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
@@ -60,7 +61,8 @@ function App() {
           </HStack>
         </Box>
         {/* <GameGrid gameQuery={gameQuery} /> */}
-        <InfiniteGameGrid gameQuery={gameQuery} />
+        {/* <InfiniteGameGrid gameQuery={gameQuery} /> */}
+        <InfiniteScrollGameGrid gameQuery={gameQuery} />
       </GridItem>
     </Grid>
   );
