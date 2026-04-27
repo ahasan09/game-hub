@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+# Game Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + TypeScript application for discovering and browsing video games. Built with Vite and powered by the RAWG Video Games API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse a large catalog of video games
+- Filter by genre, platform, and sort order
+- Search games by name
+- Infinite scroll for seamless browsing
+- Dark/light mode toggle
+- Responsive layout with Chakra UI
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- Chakra UI
+- TanStack Query (React Query) — data fetching and caching
+- Axios — HTTP client
+- React Icons
+- Framer Motion
+- React Infinite Scroll Component
 
-- Configure the top-level `parserOptions` property like this:
+## Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [Node.js](https://nodejs.org/) v16+
+
+## Getting Started
+
+```bash
+git clone https://github.com/ahasan09/game-hub
+cd game-hub
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Configure the API key
+
+Get a free API key from [RAWG.io](https://rawg.io/apidocs) and add it to your environment:
+
+Create a `.env` file in the project root:
+
+```
+VITE_API_KEY=your_rawg_api_key_here
+```
+
+### Start the dev server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server (HMR enabled) |
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Preview the production build locally |
+
+## Project Structure
+
+```
+src/
+├── components/   # UI components (GameCard, GenreList, etc.)
+├── hooks/        # Custom React Query hooks
+├── services/     # Axios API client
+└── pages/        # Page-level components
+```
