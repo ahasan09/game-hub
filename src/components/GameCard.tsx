@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Card, CardBody, HStack, Heading, Image } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
@@ -9,10 +10,14 @@ interface Props {
   game: Game;
 }
 
-const GameCard = ({ game }: Props) => {
+const GameCard = memo(({ game }: Props) => {
   return (
     <Card>
-      <Image src={getCroppedImageUrl(game.background_image)}></Image>
+      <Image
+        src={getCroppedImageUrl(game.background_image)}
+        loading="lazy"
+        alt={game.name}
+      />
       <CardBody>
         <HStack justifyContent="space-between" marginBottom={3}>
           <PlatformIconList
@@ -27,6 +32,8 @@ const GameCard = ({ game }: Props) => {
       </CardBody>
     </Card>
   );
-};
+});
+
+GameCard.displayName = "GameCard";
 
 export default GameCard;
