@@ -84,6 +84,6 @@ src/
 
 ## Continuous Integration
 
-GitHub Actions runs lint, type-check, tests, and build on every push and PR (`.github/workflows/ci.yml`). Dependabot opens weekly PRs for npm and monthly PRs for GitHub Actions (`.github/dependabot.yml`).
+GitHub Actions runs lint, type-check, tests, and build on every push and PR (`.github/workflows/ci.yml`).
 
 The `VITE_RAWG_API_KEY` secret must be set in the repository's Actions secrets for the build step to succeed in CI.

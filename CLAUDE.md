@@ -15,8 +15,7 @@ React 18 game discovery browser powered by the RAWG Video Games API, with infini
 ```
 game-hub/
 ├── .github/
-│   ├── workflows/ci.yml     # lint + type-check + test + build
-│   └── dependabot.yml
+│   └── workflows/ci.yml     # lint + type-check + test + build
 ├── src/
 │   ├── components/
 │   ├── hooks/

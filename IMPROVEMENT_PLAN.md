@@ -30,5 +30,5 @@ Modern React 18 + TypeScript + Vite app using RAWG API. Good tech stack. Improve
 
 ### DevOps
 - Add GitHub Actions CI: lint + type-check + test + build
-- Add Dependabot for automated dependency updates
+- Configure Dependabot for automated dependency updates (currently disabled)
 - Add Vercel or Netlify deployment config
