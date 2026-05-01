@@ -1,0 +1,22 @@
+
+> game-hub@0.0.0 build
+> tsc && vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 1115 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                            0.45 kB │ gzip:   0.29 kB
+dist/assets/react-CHdo91hT.svg                             4.13 kB │ gzip:   2.14 kB
+dist/assets/bulls-eye-DrK14FU9.webp                        4.14 kB
+dist/assets/meh-jG0yM-YB.webp                              6.85 kB
+dist/assets/no-image-placeholder-6f3882e0-2QnybdhG.webp   20.45 kB
+dist/assets/index-D0dUnOfW.css                             0.02 kB │ gzip:   0.04 kB
+dist/assets/index-BmVh9-Cc.js                            599.60 kB │ gzip: 202.04 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.16s

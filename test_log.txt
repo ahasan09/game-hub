@@ -1,0 +1,22 @@
+
+> game-hub@0.0.0 test
+> vitest run
+
+
+ RUN  v3.2.4 /Users/abulhasan/Desktop/Programming/Github_Projects/game-hub
+
+ ✓ src/services/image-url.test.ts (2 tests) 1ms
+stderr | src/components/CriticScore.test.tsx > CriticScore > renders any numeric score passed in
+Could not parse CSS stylesheet
+Could not parse CSS stylesheet
+Could not parse CSS stylesheet
+
+(node:97384) Warning: `--localstorage-file` was provided without a valid path
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ src/components/CriticScore.test.tsx (2 tests) 98ms
+
+ Test Files  2 passed (2)
+      Tests  4 passed (4)
+   Start at  01:14:21
+   Duration  730ms (transform 30ms, setup 108ms, collect 152ms, tests 99ms, environment 497ms, prepare 60ms)
+
